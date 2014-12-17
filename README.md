@@ -18,6 +18,6 @@ Provides a Normalized Timer in JavaScript.
 ###**API DOCUMENTATION:**###
 |Method|Description|
 |:------|:-----------|
-|tick|Ticks the counter and returns the delta from the last tick|
-|delta|Getter. Returns the last calculated delta value|
-|elapsed|Getter. Returns the time elapsed since creation of the normal timer|
+|tick|Ticks the counter and returns the delta time in milliseconds since the last tick|
+|delta|Getter. Returns the last calculated delta time in milliseconds|
+|elapsed|Getter. Returns the time elapsed in milliseconds since creation of the normal timer|

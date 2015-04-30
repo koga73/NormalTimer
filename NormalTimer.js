@@ -1,5 +1,5 @@
 /*
-* NormalTimer v1.0.0 Copyright (c) 2014 AJ Savino
+* NormalTimer v1.0.1 Copyright (c) 2015 AJ Savino
 * 
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -21,7 +21,6 @@
 */
 var NormalTimer = function(){
 	var _vars = {
-		_elapsed:0,
 		_delta:0,
 		_lastTime:0,
 		_startTime:new Date().getTime()
@@ -30,7 +29,7 @@ var NormalTimer = function(){
 	
 	var _methods = {
 		elapsed:function(){ //Getter
-			return _vars._elapsed;
+            return (new Date().getTime() - _vars._startTime) * 0.001;
 		},
 
 		delta:function(){ //Getter
@@ -39,7 +38,6 @@ var NormalTimer = function(){
 
 		tick:function(){
 			var currentTime = new Date().getTime();
-			_vars._elapsed = (currentTime - _vars._startTime) * 0.001;
 			_vars._delta = (currentTime - _vars._lastTime) * 0.001;
 			_vars._lastTime = currentTime;
 			return _vars._delta;

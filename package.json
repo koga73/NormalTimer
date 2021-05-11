@@ -1,0 +1,27 @@
+{
+	"name": "normal-timer",
+	"version": "2.0.0",
+	"description": "Normalized timer",
+	"main": "NormalTimer.js",
+	"module": "NormalTimer.esm.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/koga73/NormalTimer.git"
+	},
+	"keywords": [
+		"normal",
+		"timer",
+		"delta",
+		"elapsed",
+		"tick"
+	],
+	"author": "AJ Savino",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/koga73/NormalTimer/issues"
+	},
+	"homepage": "https://github.com/koga73/NormalTimer#readme"
+}
